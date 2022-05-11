@@ -1,0 +1,77 @@
+#myHeader {
+  text-align: center;
+  padding: 10px 16px;
+  background-image: linear-gradient(to right, #2f59e6, #2c3e50);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: white;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 40%;
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 60%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.column {
+  background-color: #aaa;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header top-banner" id="myHeader">
+      <h1>Weather Dashboard</h1>
+    </div>
+    <br />
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Search for a City:</h2>
+          <form id="city-info" name="city-info" class="card-body">
+            <input
+              name="city-name"
+              id="city-name"
+              type="text"
+              autofocus="true"
+              class="form-input"
+              placeholder="Enter City Name"
+            />
+          </form>
+          <button class="btn btn-primary btn-block" type="submit">
+            Search
+          </button>
+          <div class="card">
+            <h2>History:</h2>
+            <p>HISTORY WILL APPEAR HERE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Current Weather</h2>
+          <div class="">CURRENT WEATHER WILL BE HERE</div>
+          <p></p>
+        </div>
+
+        <div class="card" id="future-weather">
+          <h3>5-Day Forecast:</h3>
+          <ul class="cities"></ul>
+          <div class="row">
+            <div class="column">Day one</div>
+            <br />
+            <div class="column">Day two</div>
+            <br />
+            <div class="column">Day three</div>
+            <br />
+            <div class="column">Day four</div>
+            <br />
+            <div class="column">Day five</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</html>
