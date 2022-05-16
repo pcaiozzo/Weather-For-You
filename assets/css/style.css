@@ -1,77 +1,47 @@
 #myHeader {
   text-align: center;
   padding: 10px 16px;
-  background-image: linear-gradient(to right, #2f59e6, #2c3e50);
+  background-image: linear-gradient(to right, #bd85dd, #510881);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
 }
 
 body {
-  font-family: Arial;
-  padding: 20px;
-  background: white;
+  margin: 10px;
 }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
+.btn {
+  border: 2px solid black;
+  background-color: rgb(197, 130, 236);
+  color: white;
+  margin: 10px;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 40%;
-
+.form-input {
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 60%;
-  padding-left: 20px;
+.form-label {
+  font-weight: 600px;
+  font-size: medium;
 }
 
-/* Fake image */
-.column {
-  background-color: #aaa;
-  padding: 20px;
+.card-header {
+  background-color: #bd85dd;
+  color: white;
 }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+.list-group-item {
+  border-radius: 20px;
+}
+.list-group-item:hover{
+  cursor: pointer;
+  transition: ease-in-out;
+background-color: #bd85dd;
+border-radius: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Create three equal columns that float next to each other */
-.column {
-  float: left;
-  width: 20%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+#resetButton {
+  margin-left: 50px;
 }

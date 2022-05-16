@@ -8,73 +8,53 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <!--BOOTSTRAP-->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-    <!-- FONT AWESOME-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
 
+  <main>
   <body>
-    <div class="header top-banner" id="myHeader">
+    <header>
+        <div class="header top-banner" id="myHeader">
       <h1>Weather Dashboard</h1>
     </div>
+    </header>
     <br />
 
     <div class="row">
-      <div class="leftcolumn">
+      <div class="col-12 col-lg-3 search-container">
         <div class="card">
-          <h2>Search for a City:</h2>
-          <form id="city-info" name="city-info" class="card-body">
-            <input
-              name="city-name"
-              id="city-name"
-              type="text"
-              autofocus="true"
-              class="form-input"
-              placeholder="Enter City Name"
-            />
+          <h2 class="card-header">Search for a city:</h2>
+          <form id="user-form" class="card-body">
+            <label for="city" class="form-label">City Name: </label>
+            <input type="text" name="city" id="city" class="form-input" autofocus="true">
+            <button type="submit" class="btn w-75">Search</button>
           </form>
-          <button class="btn btn-primary btn-block" type="submit">
-            Search
-          </button>
-          <div class="card">
-            <h2>History:</h2>
-            <p>HISTORY WILL APPEAR HERE</p>
-          </div>
         </div>
       </div>
 
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>Current Weather</h2>
-          <div class="">CURRENT WEATHER WILL BE HERE</div>
-          <p></p>
-        </div>
 
-        <div class="card" id="future-weather">
-          <h3>5-Day Forecast:</h3>
-          <ul class="cities"></ul>
-          <div class="row">
-            <div class="column">Day one</div>
-            <br />
-            <div class="column">Day two</div>
-            <br />
-            <div class="column">Day three</div>
-            <br />
-            <div class="column">Day four</div>
-            <br />
-            <div class="column">Day five</div>
-          </div>
-        </div>
-      </div>
+    <div class="col-12 col-lg-9 mb-3 card" id="current-weather">
     </div>
+  </div>
+
+  <div class="row">
+    <ul class="col-12 col-lg-3 list-group search-history">
+      <h4 class="text-center">Search History:</h4>
+      <button id="resetButton" class="btn w-75">Clear Search History</button>
+    </ul>
+    <div class="d-flex flex-row flex-wrap col-12- col-lg-9 five-days-forcast h-50">
+    </div>
+  </div>
+</main>
   </body>
 
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </html>
