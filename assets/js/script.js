@@ -209,7 +209,7 @@ var btnClickHandler = function (event) {
 
 // To display seartch history
 var citySearchHistory = function () {
-  cityArr = JSON.parse(localStorage.getItem("Search-History"));
+  cityArr = JSON.parse(localStorage.getItem("search-history"));
   if (!cityArr) {
     cityArr = [];
   }
@@ -218,13 +218,9 @@ var citySearchHistory = function () {
   }
 };
 
-// Function for clearing storage
-function clearStorage(){ 
-  localStorage.clear();
-}
 
 citySearchHistory();
 
-document.getElementById("resetButton").addEventListener("click", clearStorage);
+
 userForm.addEventListener("submit", submitHandler);
 searchHistory.addEventListener("click", btnClickHandler);
