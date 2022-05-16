@@ -8,6 +8,7 @@ var userForm = document.querySelector("#user-form");
 var searchInput = document.querySelector("#city");
 var searchHistory = document.querySelector(".search-history");
 var fiveDaysForcast = document.querySelector(".five-days-forcast");
+var clearButton = $("#clear-history");
 
 // Function to display general information
 var showCity = function (data) {
@@ -218,9 +219,17 @@ var citySearchHistory = function () {
   }
 };
 
+// To clear the search history
+function clearHistory(event) {
+  event.preventDefault();
+  storageCity = [];
+  localStorage.removeItem("cityname");
+  document.location.reload();
+}
+
 
 citySearchHistory();
 
-
+$("#clear-history").on("click", clearHistory);
 userForm.addEventListener("submit", submitHandler);
 searchHistory.addEventListener("click", btnClickHandler);
